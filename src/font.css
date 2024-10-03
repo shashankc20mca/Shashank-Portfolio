@@ -1,0 +1,208 @@
+
+/*code to give linear gradient to text*/
+.myc{
+  font-family: "Kaushan Script", cursive;
+/* background: -webkit-linear-gradient( red , yellow);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent; */
+
+
+
+}
+.myc1{
+  font-family: "Playwrite DE Grund", cursive;
+  
+}
+.btn-grad {
+  font-family: "Edu AU VIC WA NT Dots", cursive;
+  background-image: linear-gradient(to right, #314755 0%, #26a0da  51%, #314755  100%);
+
+  text-align: center;
+font-size: 1.5rem;
+  transition: 1s;
+  background-size: 200% auto;
+  color:inherit;            
+  border-radius: 1rem;
+ border:7px solid black;
+  display: block;
+  animation: border-animation 3s ease-in-out 0s infinite,button-inside-move 2s ease-in-out 0s 1 ;
+}
+
+.btn-grad:hover {
+  
+  background-position: right center; /* change the direction of the change here */
+
+   transform: scale(1.1,1.1);
+ 
+
+}
+.bor_sup{
+ border-color: #26a0da;
+ /* border-left-color:#FFB200;
+ border-right-color:#EB5B00 ;
+ border-top-color:#E4003A;
+ border-bottom-color:#B60071 ; */
+}
+.backvideo{
+ 
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+.bg_img{
+  background-image:url("../assets/—Pngtree—abstract\ technology\ background\ technical\ electric_1252603.jpg");
+  background-position: center;
+}
+
+.myc3{
+  opacity: 0.4;
+  position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+}
+
+
+
+@keyframes myanimation{
+  from{
+transform: translatey(0rem);
+  }
+  to{
+    transform: translatey(-25rem);
+  }
+}
+
+.disp{
+  top:10%;
+  left:10%;
+  height: 80vh;
+  width: 80vw;
+  box-sizing: content-box;
+  animation: aboutme 5s ease-in-out 1,border-animation 5s ease-in-out 0s infinite;
+  
+  
+}
+.disp1{
+  
+  top:-100vh;
+  left: 10%;
+
+   
+  
+}
+
+@keyframes aboutme {
+  from{
+top:90%;
+left: 95%;
+height: 30vh;
+width: 30vw;
+  }
+  to{
+ 
+    top:10%;
+    left: 10%;
+    height: 80vh;
+    width: 80vw;
+  }
+} 
+
+#changebagcol{
+
+ 
+  background-color: rgb(0, 0, 0);
+  animation: backgroundcolorchange 6s ease-in-out 0s infinite ; 
+}
+
+@keyframes backgroundcolorchange {
+  0%{
+    background-color: rgb(27, 18, 18);
+  }
+  25%{
+    background-color: rgb(16, 12, 8)
+  }
+  50%{
+    background-color:rgb(27, 18, 18);
+  }
+  75%{
+    background-color:black
+  }
+  100%{
+    background-color: rgb(27, 18, 18);
+  }
+}
+
+
+@keyframes button-inside-move {
+  from{
+    transform: translatex(-100vw);
+  }
+  to{
+    transform: translatex(0);
+  }
+  
+}
+
+.tick_info_in{
+   position:absolute;
+  height: 20%;
+  width:40%;
+ 
+top:-13vh;
+left:10vw; 
+
+
+
+
+}
+.tick_info_out{
+  position:absolute;
+ height: 20%;
+ width:40%;
+
+top:-13vh;
+left:-150vw; 
+
+
+
+}
+
+.border-ani{
+animation: border-animation 5s ease-in-out 0s infinite;
+}
+@keyframes border-animation{
+  0%{
+    border-right: 7px solid red;
+  }
+  25%{
+    border-right: 7px solid red;
+    border-bottom: 7px solid green;
+  }
+  50%{
+    border-right: 7px solid red;
+    border-bottom: 7px solid green;
+    border-left: 7px solid blue;
+  }
+  75%{
+    border-right: 7px solid red;
+    border-bottom: 7px solid green;
+    border-left: 7px solid blue;
+  border-top:7px solid orange;
+  }
+  
+}
+.loaderclass{
+  display: none;
+}
+#loader{
+  background-image: url('assets/loader-video.gif');
+  background-size: cover;
+  background-position: center;
+  
+  
+ 
+  padding:0;
+  margin:0;
+}
