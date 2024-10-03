@@ -7,6 +7,7 @@ import Myimage from "../assets/my_image.png"
 import Letsconnect from "../assets/images/contact-me.svg";
 import logo from "../assets/white s logo.png";
 import "./font.css";
+/*commen*/
 function App (){
  
   window.addEventListener("load", (event) => {
